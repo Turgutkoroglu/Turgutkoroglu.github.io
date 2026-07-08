@@ -39,7 +39,7 @@ sections.forEach(section => observer.observe(section));
 // ---------------------------------------------------------------
 // Hero'da basit yazı (typing) efekti
 // ---------------------------------------------------------------
-const roles = ['Frontend Developer', 'UI Meraklısı', 'Sürekli Öğrenen'];
+const roles = ['Junior Computer Engineer', 'Web Developer', 'Software Enthusiast', 'Tech Explorer', 'Problem Solver', 'Innovative Thinker', 'Continuous Learner', 'Team Player', 'Creative Coder', 'Passionate Programmer'];
 const typeTarget = document.getElementById('typeTarget');
 let roleIndex = 0;
 let charIndex = 0;

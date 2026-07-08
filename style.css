@@ -83,23 +83,21 @@ img { max-width: 100%; display: block; }
   gap: 4px;
   overflow-x: auto;
   scrollbar-width: none;
+  flex: 1;
+  justify-content: center;
 }
 
 .tabnav::-webkit-scrollbar { display: none; }
 
 .tab {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 17px;
   color: var(--text-dim);
-  padding: 8px 14px;
+  padding: 5px 20px;
   border-radius: 6px 6px 0 0;
   white-space: nowrap;
   border-bottom: 2px solid transparent;
   transition: color 0.15s ease, background 0.15s ease;
-}
-
-.tab--right {
-  margin-left: auto;
 }
 
 .tab:hover { color: var(--text); background: var(--surface-2); }

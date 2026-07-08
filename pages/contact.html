@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eng-tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turgut Köroğlu — Junior Computer Engineer</title>
+  <meta name="description" content="Turgut Köroğlu'nun kişisel portfolyo sitesi. Kişisel projeleri, yetenekler ve iletişim.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- Üst bar: sekme (tab) görünümlü navigasyon -->
+  <header class="tabbar">
+    <div class="tabbar__dots">
+      <span></span><span></span><span></span>
+    </div>
+    <nav class="tabnav" aria-label="main navigation">
+      <a href="/pages/main.html" class="tab">Home</a>
+      <a href="/pages/about.html" class="tab">About</a>
+      <a href="/pages/projects.html" class="tab">Projects</a>
+      <a href="/pages/skills.html" class="tab">Skills</a>
+      <a href="/pages/certificates.html" class="tab">Certificates</a>
+      <a href="#contact" class="tab">Contact</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- İLETİŞİM -->
+    <section id="contact" class="section contact">
+      <div class="gutter" aria-hidden="true">
+      <div class="section__content">
+        <h2 class="section__title">İletişime Geç</h2>
+        <p class="contact__text">
+          Yeni fırsatlara ve projelere her zaman açığım. Bana aşağıdaki kanallardan ulaşabilirsin.
+        </p>
+        <div class="contact__links">
+          <a href="mailto:mail@example.com" class="btn btn--primary">✉ mail@example.com</a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn--ghost">GitHub</a>
+          <a href="#" target="_blank" rel="noopener" class="btn btn--ghost">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p><span class="prompt">$</span> echo "© <span id="year"></span> Turgut Köroğlu — tüm hakları saklıdır"</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
