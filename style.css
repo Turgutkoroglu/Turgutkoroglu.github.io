@@ -74,9 +74,9 @@ img { max-width: 100%; display: block; }
   border-radius: 50%;
   background: var(--border);
 }
-.tabbar__dots span:nth-child(1) { background: #E8685C; }
-.tabbar__dots span:nth-child(2) { background: #E8C15C; }
-.tabbar__dots span:nth-child(3) { background: #6FCF7A; }
+.tabbar__dots span:nth-child(1) { background: #ad07e9; }
+.tabbar__dots span:nth-child(2) { background: #ad07e9; }
+.tabbar__dots span:nth-child(3) { background: #ad07e9; }
 
 .tabnav {
   display: flex;
@@ -84,6 +84,7 @@ img { max-width: 100%; display: block; }
   overflow-x: auto;
   scrollbar-width: none;
 }
+
 .tabnav::-webkit-scrollbar { display: none; }
 
 .tab {
@@ -96,6 +97,11 @@ img { max-width: 100%; display: block; }
   border-bottom: 2px solid transparent;
   transition: color 0.15s ease, background 0.15s ease;
 }
+
+.tab--right {
+  margin-left: auto;
+}
+
 .tab:hover { color: var(--text); background: var(--surface-2); }
 .tab--active,
 .tab.is-active {
