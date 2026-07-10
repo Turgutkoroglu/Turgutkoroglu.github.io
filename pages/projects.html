@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng-tr">
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +17,27 @@
       <span></span><span></span><span></span>
     </div>
     <nav class="tabnav" aria-label="main navigation">
-      <a href="index.html" class="tab">Home</a>
-      <a href="about.html" class="tab">About</a>
-      <a href="projects.html" class="tab">Projects</a>
-      <a href="skills.html" class="tab">Skills</a>
-      <a href="certificates.html" class="tab">Certificates</a>
-      <a href="contact.html" class="tab">Contact</a>
+      <a href="/pages/index.html" class="tab">Home</a>
+      <a href="/pages/about.html" class="tab">About</a>
+      <a href="#projects" class="tab tab--active">Projects</a>
+      <a href="/pages/skills.html" class="tab">Skills</a>
+      <a href="/pages/certificates.html" class="tab">Certificates</a>
+      <a href="/pages/contact.html" class="tab">Contact</a>
     </nav>
+
+    <div class="controls">
+      <button id="langToggle" type="button" aria-label="Dili değiştir">EN</button>
+      <button id="themeToggle" type="button" aria-label="Temayı değiştir">
+        <svg class="icon icon--moon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/>
+        </svg>
+        <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+      </button>
+    </div>
+    
     <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
