@@ -20,7 +20,7 @@ document.querySelectorAll('.tab').forEach(link => {
 // ---------------------------------------------------------------
 // Hero'da basit yazı (typing) efekti
 // ---------------------------------------------------------------
-const roles = ['Junior Computer Engineer', 'Web Developer', 'Software Enthusiast', 'Tech Explorer', 'Problem Solver', 'Innovative Thinker', 'Continuous Learner', 'Team Player', 'Creative Coder', 'Passionate Programmer'];
+const roles = ['Computer Engineer', 'Web Developer', 'Software Enthusiast', 'Tech Explorer', 'Problem Solver', 'Innovative Thinker', 'Continuous Learner', 'Team Player', 'Creative Coder', 'Passionate Programmer'];
 const typeTarget = document.getElementById('typeTarget');
 let roleIndex = 0;
 let charIndex = 0;
@@ -53,56 +53,6 @@ if (typeTarget) {
   typeTarget.textContent = '';
   setTimeout(typeLoop, 600);
 }
-
-// const type1 = document.getElementById('type1');
-// let roleIndex1 = 0;
-// let charIndex1 = 0;
-
-// function typeLoop1() {
-//   const current = roles[roleIndex1];
-
-//   if (true) {
-//     charIndex1++;
-//     type1.textContent = current.slice(0, charIndex1);
-//     if (charIndex1 === current.length) {
-//       deleting = true;
-//       setTimeout(typeLoop1, 1400);
-//       return;
-//     }
-//   } else {
-//     charIndex1--;
-//     type1.textContent = current.slice(0, charIndex1);
-//     if (charIndex1 === 0) {
-//       deleting = false;
-//       roleIndex1 = (roleIndex1 + 1) % roles.length;
-//     }
-//   }
-// }
-
-// const type2 = document.getElementById('type2');
-// let roleIndex2 = 0;
-// let charIndex2 = 0;
-
-// function typeLoop2() {
-//   const current = roles[roleIndex2];
-
-//   if (true) {
-//     charIndex2++;
-//     type1.textContent = current.slice(0, charIndex2);
-//     if (charIndex2 === current.length) {
-//       deleting = true;
-//       setTimeout(typeLoop2, 1400);
-//       return;
-//     }
-//   } else {
-//     charIndex2--;
-//     type1.textContent = current.slice(0, charIndex2);
-//     if (charIndex2 === 0) {
-//       deleting = false;
-//       roleIndex2 = (roleIndex2 + 1) % roles.length;
-//     }
-//   }
-// }
 
 // ---------------------------------------------------------------
 // Footer yılı otomatik güncelle

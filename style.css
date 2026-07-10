@@ -47,6 +47,7 @@ body {
   min-height: 100vh;        
   display: flex;            
   flex-direction: column;
+  animation: fadeInPage 0.8s ease-in-out;
 }
 
 #image {
@@ -443,10 +444,20 @@ img { max-width: 100%; display: block; }
     border-bottom: 1px solid var(--border); 
   }
 
+  #image { 
+    width: 200px; 
+    height: 200px; 
+    right: 20px; 
+    top: 20px; 
+  }
+
   .menu-toggle { display: flex; }
 
   .gutter { display: none; }
   .section { padding: 64px 20px; }
+}
+.certificates { 
+  flex:1;
 }
 
 .cert__grid {
@@ -589,3 +600,15 @@ body {
 .icon--sun { display: none; }
 [data-theme="light"] .icon--moon { display: none; }
 [data-theme="light"] .icon--sun { display: block; }
+
+
+/* @keyframes fadeInPage {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
