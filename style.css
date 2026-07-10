@@ -57,7 +57,6 @@ body {
   position: absolute;
   right: 200px;
   top: 100px;
-  z-index: 50;
 }
 
 .page {
@@ -446,10 +445,10 @@ img { max-width: 100%; display: block; }
   }
 
   #image { 
-    width: 200px; 
+    width: 200px;
     height: 200px; 
-    right: 20px; 
-    top: 20px; 
+    object-fit: cover;
+  border-radius: 50%;
   }
 
   .menu-toggle { display: flex; }
