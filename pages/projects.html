@@ -8,8 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/pictures/tk.png" type="image/png">
 </head>
-<body>
+<body class="no_scrollbar">
 
   <!-- Üst bar: sekme (tab) görünümlü navigasyon -->
   <header class="tabbar">
@@ -28,16 +29,11 @@
     <div class="controls">
       <button id="langToggle" type="button" aria-label="Dili değiştir">EN</button>
       <button id="themeToggle" type="button" aria-label="Temayı değiştir">
-        <svg class="icon icon--moon" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/>
-        </svg>
-        <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="4"/>
-          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
-        </svg>
+        <img src="/pictures/moon.png" class="icon icon--moon" alt="Moon Icon">
+        <img src="/pictures/sun.png" class="icon icon--sun" alt="Sun Icon">
       </button>
     </div>
-    
+
     <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -52,41 +48,44 @@
         <div class="projects__grid">
 
           <article class="card">
-            <div class="card__file">project-1.html</div>
-            <h3 class="card__title">Proje Adı 1</h3>
-            <p class="card__desc">Projenin ne yaptığına dair kısa bir açıklama. Hangi problemi çözdü?</p>
+            <h3 class="card__title">DEVICE RECOGNITION BASED ON BROWSER FINGERPRINTING</h3>
+            <p class="card__desc">Bu projede, çerezlerin ve geleneksel takip yöntemlerinin kısıtlandığı modern web 
+              ortamında cihazları güvenilir bir şekilde tanıyabilmek için kural tabanlı mantık ile makine öğrenimini birleştiren 
+              hibrit bir tarayıcı parmak izi (browser fingerprinting) eşleştirme sistemi geliştirdik. Parmak izi özniteliklerinin 
+              zaman içindeki değişimini ve belirleyiciliğini analiz edip, oluşturduğumuz bu iki aşamalı yapıyla sistemin yanlış 
+              eşleştirme oranını büyük ölçüde düşürdük. Böylece sadece sabit kurallara bağlı kalmadan, zamanla değişen tarayıcı 
+              profillerini yüksek doğrulukla ve gizlilik standartlarına uygun bir şekilde takip edebilen daha esnek ve güçlü bir 
+              altyapı ortaya koyduk.
+            </p>
             <div class="card__tags">
-              <span>HTML</span><span>CSS</span><span>JS</span>
+              <span>Python</span><span>Machine Learning</span><span>MongoDB</span><span>LightGBM</span><span>Random Forest</span>
             </div>
             <div class="card__links">
-              <a href="#" target="_blank" rel="noopener">Canlı Demo →</a>
-              <a href="#" target="_blank" rel="noopener">GitHub →</a>
+              <a href="/assets/poster.pdf" target="_blank" rel="noopener">Poster →</a>
             </div>
           </article>
 
           <article class="card">
-            <div class="card__file">project-2.html</div>
-            <h3 class="card__title">Proje Adı 2</h3>
-            <p class="card__desc">Projenin ne yaptığına dair kısa bir açıklama. Hangi problemi çözdü?</p>
+            <h3 class="card__title">Fine Tuning a Model on the Law Dataset</h3>
+            <p class="card__desc">Geliştirdiğimiz bu projede, açık kaynaklı ai modellerini kullanarak belli bir konu üzerinde fine tuning yaptık. Elde ettiğimiz sonuçları ROUGE ve BERTScore gibi metriklerle test ederek sistemin başarısını kapsamlı bir analizle ortaya koyduk.</p>
             <div class="card__tags">
-              <span>HTML</span><span>CSS</span>
+              <span>Python</span><span>Machine Learning</span><span>Llama-3</span><span>Phi-3.5</span><span>Fine Tuning</span>
             </div>
             <div class="card__links">
-              <a href="#" target="_blank" rel="noopener">Canlı Demo →</a>
-              <a href="#" target="_blank" rel="noopener">GitHub →</a>
+              <a href="/assets/Fine_Tuning_A_Model_on_the_Law_Dataset.pdf" target="_blank" rel="noopener">Presentation →</a>
             </div>
           </article>
 
           <article class="card">
-            <div class="card__file">project-3.html</div>
-            <h3 class="card__title">Proje Adı 3</h3>
-            <p class="card__desc">Projenin ne yaptığına dair kısa bir açıklama. Hangi problemi çözdü?</p>
+            <h3 class="card__title">Data Analysis on Diabetes Readmission Dataset</h3>
+            <p class="card__desc">Geliştirdiğimiz bu projede, ABD hastanelerinden sağlanan geniş kapsamlı bir diabet veri setini 
+              inceledik ve Diyabet hastalarının taburcu edildikten sonraki hastaneye yeniden yatış risklerini yüksek doğrulukla 
+              öngörebilmek adına makine öğrenmesi modellerini test ederek uçtan uca bir analitik altyapı kurguladık.</p>
             <div class="card__tags">
-              <span>JS</span><span>API</span>
+              <span>Python</span><span>K-nn</span><span>DBScan</span><span>Random Forest</span><span>Decision Tree</span><span>Naive Bayes</span><span>Support Vector Machine</span>
             </div>
             <div class="card__links">
-              <a href="#" target="_blank" rel="noopener">Canlı Demo →</a>
-              <a href="#" target="_blank" rel="noopener">GitHub →</a>
+              <a href="/assets/Data_Analysis_on_Diabetes_Readmission_Dataset.pdf" target="_blank" rel="noopener">Presentation →</a>
             </div>
           </article>
 

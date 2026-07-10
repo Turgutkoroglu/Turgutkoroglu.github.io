@@ -8,6 +8,7 @@
   --surface-2: #1D2129;
   --border: #2A2F3A;
   --text: #E6E8EB;
+  --btn-text: #070707;
   --text-dim: #8B92A0;
   --accent: #7C9EFF;   /* "keyword" mavi */
   --accent-2: #F2C879; /* "string" amber */
@@ -260,7 +261,7 @@ img { max-width: 100%; display: block; }
   margin-bottom: 36px;
 }
 
-.hero__actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.hero__actions { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 50px; }
 
 .btn {
   display: inline-flex;
@@ -278,7 +279,7 @@ img { max-width: 100%; display: block; }
 .btn--primary { background: var(--accent); color: #10131A; }
 .btn--primary:hover { background: #9BB4FF; }
 
-.btn--ghost { border-color: var(--border); color: var(--text); }
+.btn--ghost { border-color: var(--border); color: var(--btn-text); background: rgb(255, 255, 255); }
 .btn--ghost:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ===========================================================
@@ -317,7 +318,7 @@ img { max-width: 100%; display: block; }
    =========================================================== */
 .projects__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(720px, 1fr));
   gap: 20px;
 }
 
@@ -612,3 +613,7 @@ body {
     transform: translateY(0);
   }
 } */
+
+#langs {
+  margin-top: 50px;
+}
