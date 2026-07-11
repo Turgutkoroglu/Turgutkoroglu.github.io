@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Turgut Köroğlu — Computer Engineer</title>
-  <meta name="description" content="Turgut Köroğlu'nun kişisel portfolyo sitesi. Kişisel projeleri, yetenekler ve iletişim.">
+  <title data-en="Turgut Köroğlu — Computer Engineer" data-tr="Turgut Köroğlu — Bilgisayar Mühendisi"></title>
+  <meta data-tr name="description" content="Turgut Köroğlu'nun kişisel portfolyo sitesi. Kişisel projeleri, yetenekler ve iletişim.">
+  <meta data-en name="description" content="Turgut Köroğlu's personal portfolio website. Personal projects, skills, and contact information.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" href="/pictures/tk.png" type="image/png">
 </head>
-<body>
+<body class="no_scrollbar">
 
   <!-- Üst bar: sekme (tab) görünümlü navigasyon -->
   <header class="tabbar">
@@ -18,17 +19,17 @@
       <span></span><span></span><span></span>
     </div>
     <nav class="tabnav" aria-label="main navigation">
-      <a href="#hero" class="tab tab--active">Home</a>
-      <a href="/pages/about.html" class="tab">About</a>
-      <a href="/pages/projects.html" class="tab">Projects</a>
-      <a href="/pages/skills.html" class="tab">Skills</a>
-      <a href="/pages/certificates.html" class="tab">Certificates</a>
-      <a href="/pages/contact.html" class="tab">Contact</a>
+      <a href="#hero" class="tab tab--active" data-tr="Ana Sayfa" data-en="Home"></a>
+      <a href="/pages/about.html" class="tab" data-tr="Hakkımda" data-en="About"></a>
+      <a href="/pages/projects.html" class="tab" data-tr="Projelerim" data-en="Projects"></a>
+      <a href="/pages/skills.html" class="tab" data-tr="Yeteneklerim" data-en="Skills"></a>
+      <a href="/pages/certificates.html" class="tab" data-tr="Sertifikalarım" data-en="Certificates"></a>
+      <a href="/pages/contact.html" class="tab" data-tr="İletişim" data-en="Contact"></a>
     </nav>
 
     <div class="controls">
-      <button id="langToggle" type="button" aria-label="Dili değiştir">EN</button>
-      <button id="themeToggle" type="button" aria-label="Temayı değiştir">
+      <button id="langToggle" type="button" aria-label="Change Language">EN</button>
+      <button id="themeToggle" type="button" aria-label="Change Theme">
         <img src="/pictures/moon.png" class="icon icon--moon" alt="Moon Icon">
         <img src="/pictures/sun.png" class="icon icon--sun" alt="Sun Icon">
       </button>
@@ -42,25 +43,29 @@
   <main>
     <section id="hero" class="section hero">
       <div class="section__content hero__content">
-        <p class="eyebrow">// Merhaba, Ben</p>
+        <p class="eyebrow" data-tr="// Merhaba, Ben" data-en="// Hello, I'm"></p>
         <h1 class="hero__name">Turgut Köroğlu</h1>
-        <img id="image" src="/pictures/resim.jpg" alt="Turgut Köroğlu" >
-        <p class="hero__role"><span class="type-cursor" id="typeTarget">Computer Engineer</span></p>
-        <p class="hero__pitch">
-          I am a young computer engineer with a keen interest and passion for technology, and I am keen to contribute to 
+        <p class="hero__role" data-tr="Bilgisayar Mühendisi" data-en="Computer Engineer"></p>
+        <p class="hero__pitch" 
+          data-tr="Teknolojiye ilgi duyan ve tutkulu bir genç bilgisayar mühendisiyim ve yenilikçi 
+          projelere katkıda bulunmak istiyorum. Programlama ve problem çözme konularında sağlam bir temele sahibim ve keyifli, 
+          verimli ve kullanıcı dostu projeler geliştirmeye çalışıyorum." data-en="I am a young computer engineer with a keen interest and passion for technology, and I am keen to contribute to 
           innovative projects. With a solid foundation in programming and problem-solving, I strive to develop projects 
-          that are enjoyable, efficient and user-friendly.
+          that are enjoyable, efficient and user-friendly." >
         </p>
         <div class="hero__actions">
-          <a href="/pages/projects.html" class="btn btn--primary">Projelerimi Gör</a>
-          <a href="/assets/CV.pdf" class="btn btn--ghost" download>CV İndir</a>
+          <a href="/pages/projects.html" class="btn btn--primary" data-tr="Projelerimi Gör" data-en="View My Projects"></a>
+          <a href="/assets/CV.pdf" class="btn btn--ghost" download data-tr="CV İndir" data-en="Download CV"></a>
+        </div>
+        <div id ="image">
+          <img src="/pictures/resim.jpg" alt="Turgut Köroğlu" >
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>"© <span id="year"></span> Turgut Köroğlu — tüm hakları saklıdır"</p>
+    <p>"© <span id="year"></span> <span data-tr="Turgut Köroğlu — tüm hakları saklıdır" data-en="Turgut Köroğlu — all rights reserved"></span></p>
   </footer>
 
   <script src="/script.js"></script>

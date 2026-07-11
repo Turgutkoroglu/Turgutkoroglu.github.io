@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Turgut Köroğlu — Computer Engineer</title>
-  <meta name="description" content="Turgut Köroğlu'nun kişisel portfolyo sitesi. Kişisel projeleri, yetenekler ve iletişim.">
+  <title data-en="Turgut Köroğlu — Computer Engineer" data-tr="Turgut Köroğlu — Bilgisayar Mühendisi"></title>
+  <meta data-tr name="description" content="Turgut Köroğlu'nun kişisel portfolyo sitesi. Kişisel projeleri, yetenekler ve iletişim.">
+  <meta data-en name="description" content="Turgut Köroğlu's personal portfolio website. Personal projects, skills, and contact information.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
@@ -18,17 +19,17 @@
       <span></span><span></span><span></span>
     </div>
     <nav class="tabnav" aria-label="main navigation">
-      <a href="/pages/index.html" class="tab">Home</a>
-      <a href="/pages/about.html" class="tab">About</a>
-      <a href="#projects" class="tab tab--active">Projects</a>
-      <a href="/pages/skills.html" class="tab">Skills</a>
-      <a href="/pages/certificates.html" class="tab">Certificates</a>
-      <a href="/pages/contact.html" class="tab">Contact</a>
+      <a href="/pages/index.html" class="tab" data-tr="Ana Sayfa" data-en="Home"></a>
+      <a href="/pages/about.html" class="tab" data-tr="Hakkımda" data-en="About"></a>
+      <a href="/pages/projects.html" class="tab tab--active" data-tr="Projelerim" data-en="Projects"></a>
+      <a href="/pages/skills.html" class="tab" data-tr="Yeteneklerim" data-en="Skills"></a>
+      <a href="/pages/certificates.html" class="tab" data-tr="Sertifikalarım" data-en="Certificates"></a>
+      <a href="/pages/contact.html" class="tab" data-tr="İletişim" data-en="Contact"></a>
     </nav>
 
     <div class="controls">
-      <button id="langToggle" type="button" aria-label="Dili değiştir">EN</button>
-      <button id="themeToggle" type="button" aria-label="Temayı değiştir">
+      <button id="langToggle" type="button" aria-label="Change Language">EN</button>
+      <button id="themeToggle" type="button" aria-label="Change Theme">
         <img src="/pictures/moon.png" class="icon icon--moon" alt="Moon Icon">
         <img src="/pictures/sun.png" class="icon icon--sun" alt="Sun Icon">
       </button>
@@ -44,18 +45,24 @@
 <!-- PROJELER -->
     <section id="projects" class="section projects">
       <div class="section__content">
-        <h2 class="section__title">Projeler</h2>
+        <h2 class="section__title" data-tr="Projeler" data-en="Projects"></h2>
         <div class="projects__grid">
 
           <article class="card">
-            <h3 class="card__title">DEVICE RECOGNITION BASED ON BROWSER FINGERPRINTING</h3>
-            <p class="card__desc">Bu projede, çerezlerin ve geleneksel takip yöntemlerinin kısıtlandığı modern web 
+            <h3 class="card__title" data-tr="TARAYICI PARMAK İZİNE DAYALI CİHAZ TANIMA" data-en="DEVICE RECOGNITION BASED ON BROWSER FINGERPRINTING"></h3>
+            <p class="card__desc" data-tr="Bu projede, çerezlerin ve geleneksel takip yöntemlerinin kısıtlandığı modern web 
               ortamında cihazları güvenilir bir şekilde tanıyabilmek için kural tabanlı mantık ile makine öğrenimini birleştiren 
               hibrit bir tarayıcı parmak izi (browser fingerprinting) eşleştirme sistemi geliştirdik. Parmak izi özniteliklerinin 
               zaman içindeki değişimini ve belirleyiciliğini analiz edip, oluşturduğumuz bu iki aşamalı yapıyla sistemin yanlış 
               eşleştirme oranını büyük ölçüde düşürdük. Böylece sadece sabit kurallara bağlı kalmadan, zamanla değişen tarayıcı 
               profillerini yüksek doğrulukla ve gizlilik standartlarına uygun bir şekilde takip edebilen daha esnek ve güçlü bir 
-              altyapı ortaya koyduk.
+              altyapı ortaya koyduk." 
+              data-en="In this project, we developed a hybrid browser fingerprinting matching system that combines rule-based logic 
+              with machine learning to reliably identify devices in the modern web environment where cookies and traditional tracking 
+              methods are restricted. We analyzed the temporal changes and determinability of fingerprint attributes, and with this two-stage
+              structure we created, we significantly reduced the system's false matching rate. Thus, we established a more flexible and 
+              powerful infrastructure that can track changing browser profiles over time with high accuracy and in compliance with privacy 
+              standards, without relying solely on fixed rules.">
             </p>
             <div class="card__tags">
               <span>Python</span><span>Machine Learning</span><span>MongoDB</span><span>LightGBM</span><span>Random Forest</span>
@@ -66,28 +73,33 @@
           </article>
 
           <article class="card">
-            <h3 class="card__title">Fine Tuning a Model on the Law Dataset</h3>
-            <p class="card__desc">Geliştirdiğimiz bu projede, açık kaynaklı ai modellerini kullanarak belli bir konu üzerinde fine tuning 
+            <h3 class="card__title" data-tr="Kanun Veri Seti Üzerinde Model Eğitip İyileştirme" data-en="Fine Tuning a Model on the Law Dataset"></h3>
+            <p class="card__desc" data-tr="Geliştirdiğimiz bu projede, açık kaynaklı ai modellerini kullanarak belli bir konu üzerinde fine tuning 
               yaptık. Elde ettiğimiz sonuçları ROUGE ve BERT Score gibi metriklerle test ederek sistemin başarısını kapsamlı bir analizle 
-              ortaya koyduk.</p>
+              ortaya koyduk." data-en="In this project, we fine-tuned open-source AI models on a specific topic. We tested our results with metrics like ROUGE and BERT Score to comprehensively analyze the system's performance.">
+            </p>
             <div class="card__tags">
               <span>Python</span><span>Machine Learning</span><span>Llama-3</span><span>Phi-3.5</span><span>Fine Tuning</span>
             </div>
             <div class="card__links">
-              <a href="/assets/Fine_Tuning_A_Model_on_the_Law_Dataset.pdf" target="_blank" rel="noopener">Presentation →</a>
+              <a href="/assets/Fine_Tuning_A_Model_on_the_Law_Dataset.pdf" target="_blank" rel="noopener" data-tr="Sunum →" data-en="Presentation →"></a>
             </div>
           </article>
 
           <article class="card">
-            <h3 class="card__title">Data Analysis on Diabetes Readmission Dataset</h3>
-            <p class="card__desc">Geliştirdiğimiz bu projede, ABD hastanelerinden sağlanan geniş kapsamlı bir diabet veri setini 
+            <h3 class="card__title" data-tr=" Diyabet Nedeniyle Yeniden Yatış Veri Seti Üzerinde Veri Analizi" data-en="Data Analysis on Diabetes Readmission Dataset"></h3>
+            <p class="card__desc" data-tr="Geliştirdiğimiz bu projede, ABD hastanelerinden sağlanan geniş kapsamlı bir diabet veri setini 
               inceledik ve Diyabet hastalarının taburcu edildikten sonraki hastaneye yeniden yatış risklerini yüksek doğrulukla 
-              öngörebilmek adına makine öğrenmesi modellerini test ederek uçtan uca bir analitik altyapı kurguladık.</p>
+              öngörebilmek adına makine öğrenmesi modellerini test ederek uçtan uca bir analitik altyapı kurguladık." 
+              data-en="In this project, we analyzed a comprehensive diabetes readmission dataset from U.S. hospitals. We tested machine 
+              learning models to predict the risk of readmission with high accuracy, establishing a end-to-end analytics infrastructure.">
+            </p>
             <div class="card__tags">
               <span>Python</span><span>K-nn</span><span>DBScan</span><span>Random Forest</span><span>Decision Tree</span><span>Naive Bayes</span><span>Support Vector Machine</span>
             </div>
             <div class="card__links">
-              <a href="/assets/Data_Analysis_on_Diabetes_Readmission_Dataset.pdf" target="_blank" rel="noopener">Presentation →</a>
+              <a href="https://github.com/Turgutkoroglu/CSE4062S26_Grp8" target="_blank" rel="noopener">Github →</a>
+              <a href="/assets/Data_Analysis_on_Diabetes_Readmission_Dataset.pdf" target="_blank" rel="noopener" data-tr="Sunum →" data-en="Presentation →"></a>
             </div>
           </article>
 
@@ -98,9 +110,9 @@
   </main>
 
   <footer class="footer">
-    <p>"© <span id="year"></span> Turgut Köroğlu — tüm hakları saklıdır"</p>
+    <p>"© <span id="year"></span> <span data-tr="Turgut Köroğlu — tüm hakları saklıdır" data-en="Turgut Köroğlu — all rights reserved"></span></p>
   </footer>
 
   <script src="/script.js"></script>
 </body>
-</html> 
+</html>

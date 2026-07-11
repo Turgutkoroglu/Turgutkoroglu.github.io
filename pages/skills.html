@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Turgut Köroğlu — Computer Engineer</title>
-  <meta name="description" content="Turgut Köroğlu'nun kişisel portfolyo sitesi. Kişisel projeleri, yetenekler ve iletişim.">
+  <title data-en="Turgut Köroğlu — Computer Engineer" data-tr="Turgut Köroğlu — Bilgisayar Mühendisi"></title>
+  <meta data-tr name="description" content="Turgut Köroğlu'nun kişisel portfolyo sitesi. Kişisel projeleri, yetenekler ve iletişim.">
+  <meta data-en name="description" content="Turgut Köroğlu's personal portfolio website. Personal projects, skills, and contact information.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" href="/pictures/tk.png" type="image/png">
 </head>
-<body>
+<body class="no_scrollbar">
 
   <!-- Üst bar: sekme (tab) görünümlü navigasyon -->
   <header class="tabbar">
@@ -18,22 +19,22 @@
       <span></span><span></span><span></span>
     </div>
     <nav class="tabnav" aria-label="main navigation">
-      <a href="/pages/index.html" class="tab">Home</a>
-      <a href="/pages/about.html" class="tab">About</a>
-      <a href="/pages/projects.html" class="tab">Projects</a>
-      <a href="#skills" class="tab tab--active">Skills</a>
-      <a href="/pages/certificates.html" class="tab">Certificates</a>
-      <a href="/pages/contact.html" class="tab">Contact</a>
+      <a href="/pages/index.html" class="tab" data-tr="Ana Sayfa" data-en="Home"></a>
+      <a href="/pages/about.html" class="tab" data-tr="Hakkımda" data-en="About"></a>
+      <a href="/pages/projects.html" class="tab" data-tr="Projelerim" data-en="Projects"></a>
+      <a href="/pages/skills.html" class="tab tab--active" data-tr="Yeteneklerim" data-en="Skills"></a>
+      <a href="/pages/certificates.html" class="tab" data-tr="Sertifikalarım" data-en="Certificates"></a>
+      <a href="/pages/contact.html" class="tab" data-tr="İletişim" data-en="Contact"></a>
     </nav>
 
     <div class="controls">
-      <button id="langToggle" type="button" aria-label="Dili değiştir">EN</button>
-      <button id="themeToggle" type="button" aria-label="Temayı değiştir">
+      <button id="langToggle" type="button" aria-label="Change Language">EN</button>
+      <button id="themeToggle" type="button" aria-label="Change Theme">
         <img src="/pictures/moon.png" class="icon icon--moon" alt="Moon Icon">
         <img src="/pictures/sun.png" class="icon icon--sun" alt="Sun Icon">
       </button>
     </div>
-    
+
     <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -44,7 +45,7 @@
     <!-- YETENEKLER -->
     <section id="skills" class="section skills">
       <div class="section__content">
-        <h2 class="section__title">Yetenekler</h2>
+        <h2 class="section__title" data-tr="Yetenekler" data-en="Skills"></h2>
         <div class="skills__list">
           <span class="pill">HTML5</span>
           <span class="pill">CSS3</span>
@@ -61,11 +62,11 @@
           <span class="pill">MongoDB</span>
         </div>
 
-        <h2 class="section__title" id="langs">Diller</h2>
+        <h2 class="section__title" id="langs" data-tr="Diller" data-en="Languages"></h2>
         <div class="skills__list">
-          <span class="pill">İngilizce : B2</span>
-          <span class="pill">Almanca : A2</span>
-          <span class="pill">Türkçe : Native</span>
+          <span class="pill" data-tr="İngilizce : B2" data-en="English : B2"></span>
+          <span class="pill" data-tr="Almanca : A2" data-en="German : A2"></span>
+          <span class="pill" data-tr="Türkçe : Yerli" data-en="Turkish : Native"></span>
         </div>
       </div>
     </section>
@@ -73,7 +74,7 @@
   </main>
 
   <footer class="footer">
-    <p>"© <span id="year"></span> Turgut Köroğlu — tüm hakları saklıdır"</p>
+    <p>"© <span id="year"></span> <span data-tr="Turgut Köroğlu — tüm hakları saklıdır" data-en="Turgut Köroğlu — all rights reserved"></span></p>
   </footer>
 
   <script src="/script.js"></script>

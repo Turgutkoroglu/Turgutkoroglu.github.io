@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Turgut Köroğlu — Computer Engineer</title>
-  <meta name="description" content="Turgut Köroğlu'nun kişisel portfolyo sitesi. Kişisel projeleri, yetenekler ve iletişim.">
+  <title data-en="Turgut Köroğlu — Computer Engineer" data-tr="Turgut Köroğlu — Bilgisayar Mühendisi"></title>
+  <meta data-tr name="description" content="Turgut Köroğlu'nun kişisel portfolyo sitesi. Kişisel projeleri, yetenekler ve iletişim.">
+  <meta data-en name="description" content="Turgut Köroğlu's personal portfolio website. Personal projects, skills, and contact information.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
@@ -18,17 +19,17 @@
       <span></span><span></span><span></span>
     </div>
     <nav class="tabnav" aria-label="main navigation">
-      <a href="/pages/index.html" class="tab">Home</a>
-      <a href="/pages/about.html" class="tab">About</a>
-      <a href="/pages/projects.html" class="tab">Projects</a>
-      <a href="/pages/skills.html" class="tab">Skills</a>
-      <a href="#certificates" class="tab tab--active">Certificates</a>
-      <a href="/pages/contact.html" class="tab">Contact</a>
+      <a href="/pages/index.html" class="tab" data-tr="Ana Sayfa" data-en="Home"></a>
+      <a href="/pages/about.html" class="tab" data-tr="Hakkımda" data-en="About"></a>
+      <a href="/pages/projects.html" class="tab" data-tr="Projelerim" data-en="Projects"></a>
+      <a href="/pages/skills.html" class="tab" data-tr="Yeteneklerim" data-en="Skills"></a>
+      <a href="/pages/certificates.html" class="tab tab--active" data-tr="Sertifikalarım" data-en="Certificates"></a>
+      <a href="/pages/contact.html" class="tab" data-tr="İletişim" data-en="Contact"></a>
     </nav>
 
     <div class="controls">
-      <button id="langToggle" type="button" aria-label="Dili değiştir">EN</button>
-      <button id="themeToggle" type="button" aria-label="Temayı değiştir">
+      <button id="langToggle" type="button" aria-label="Change Language">EN</button>
+      <button id="themeToggle" type="button" aria-label="Change Theme">
         <img src="/pictures/moon.png" class="icon icon--moon" alt="Moon Icon">
         <img src="/pictures/sun.png" class="icon icon--sun" alt="Sun Icon">
       </button>
@@ -42,12 +43,12 @@
   <main>
     <section id="certificates" class="section certificates">
       <div class="section__content">
-        <h2 class="section__title">Certificates</h2>
+        <h2 class="section__title" data-tr="Sertifikalarım" data-en="Certificates"></h2>
  
         <div class="cert__grid">
  
           <article class="cert-card">
-            <h3 class="cert-card__title">Algoritma Programlama ve Veri Yapılarına Giriş Sertifika</h3>
+            <h3 class="cert-card__title" data-tr="Algoritma Programlama ve Veri Yapılarına Giriş" data-en="Introduction to Algorithms and Data Structures"></h3>
             <p class="cert-card__issuer">BTK · 27.07.2024</p>
  
             <div class="cert-card__preview">
@@ -55,12 +56,12 @@
             </div>
  
             <a href="/assets/Algoritma_Programlama_ve_Veri_Yapılarına_Giriş_Sertifika.pdf" target="_blank" rel="noopener" class="cert-card__link">
-              Full Size View / Download →
+              <span data-tr="Tam Boyutlu Görüntüle / İndir →" data-en="Full Size View / Download →"></span>
             </a>
           </article>
 
           <article class="cert-card">
-            <h3 class="cert-card__title">API ve API_Testi Sertifika</h3>
+            <h3 class="cert-card__title" data-tr="API ve API_Testi" data-en="API and API Testing"></h3>
             <p class="cert-card__issuer">BTK · 12.08.2024</p>
  
             <div class="cert-card__preview">
@@ -68,12 +69,12 @@
             </div>
  
             <a href="/assets/API_ve_API_Testi_Sertifika.pdf" target="_blank" rel="noopener" class="cert-card__link">
-              Full Size View / Download →
+              <span data-tr="Tam Boyutlu Görüntüle / İndir →" data-en="Full Size View / Download →"></span>
             </a>
           </article>
 
           <article class="cert-card">
-            <h3 class="cert-card__title">AWS Cloud Practitioner</h3>
+            <h3 class="cert-card__title" data-tr="AWS Bulut Pratisyeni" data-en="AWS Cloud Practitioner"></h3>
             <p class="cert-card__issuer">AWS · 18.08.2025</p>
  
             <div class="cert-card__preview">
@@ -81,12 +82,12 @@
             </div>
  
             <a href="/assets/AWS_Cloud_Practitioner.pdf" target="_blank" rel="noopener" class="cert-card__link">
-              Full Size View / Download →
+              <span data-tr="Tam Boyutlu Görüntüle / İndir →" data-en="Full Size View / Download →"></span>
             </a>
           </article>
 
           <article class="cert-card">
-            <h3 class="cert-card__title">Go ile Programlamaya Giriş Sertifika</h3>
+            <h3 class="cert-card__title" data-tr="Go ile Programlamaya Giriş" data-en="Introduction to Programming with Go"></h3>
             <p class="cert-card__issuer">BTK · 27.07.2024</p>
  
             <div class="cert-card__preview">
@@ -94,12 +95,12 @@
             </div>
  
             <a href="/assets/Go_ile_Programlamaya_Giriş_Sertifika.pdf" target="_blank" rel="noopener" class="cert-card__link">
-              Full Size View / Download →
+              <span data-tr="Tam Boyutlu Görüntüle / İndir →" data-en="Full Size View / Download →"></span>
             </a>
           </article>
 
           <article class="cert-card">
-            <h3 class="cert-card__title">HTML5 ile Web Geliştirme Sertifika</h3>
+            <h3 class="cert-card__title" data-tr="HTML5 ile Web Geliştirme" data-en="Web Development with HTML5"></h3>
             <p class="cert-card__issuer">BTK · 07.04.2025</p>
  
             <div class="cert-card__preview">
@@ -107,12 +108,12 @@
             </div>
  
             <a href="/assets/HTML5_ile_Web_Geliştirme_Sertifika.pdf" target="_blank" rel="noopener" class="cert-card__link">
-              Full Size View / Download →
+              <span data-tr="Tam Boyutlu Görüntüle / İndir →" data-en="Full Size View / Download →"></span>
             </a>
           </article>
 
           <article class="cert-card">
-            <h3 class="cert-card__title">Uluslararası İş Analizi Metodolojisi ve Teknikleri Sertifika</h3>
+            <h3 class="cert-card__title" data-tr="Uluslararası İş Analizi Metodolojisi ve Teknikleri" data-en="International Business Analysis Methodologies and Techniques"></h3>
             <p class="cert-card__issuer">BTK · 07.08.2024</p>
  
             <div class="cert-card__preview">
@@ -120,12 +121,12 @@
             </div>
  
             <a href="/assets/Uluslararası_İş_Analizi_Metodolojisi_ve_Teknikleri_Sertifika.pdf" target="_blank" rel="noopener" class="cert-card__link">
-              Full Size View / Download →
+              <span data-tr="Tam Boyutlu Görüntüle / İndir →" data-en="Full Size View / Download →"></span>
             </a>
           </article>
 
           <article class="cert-card">
-            <h3 class="cert-card__title">Uygulamalarla SQL Öğreniyorum Sertifika</h3>
+            <h3 class="cert-card__title" data-tr="Uygulamalarla SQL Öğreniyorum" data-en="Learning SQL with Applications"></h3>
             <p class="cert-card__issuer">BTK · 07.08.2024</p>
  
             <div class="cert-card__preview">
@@ -133,7 +134,7 @@
             </div>
  
             <a href="/assets/Uygulamalarla_SQL_Öğreniyorum_Sertifika.pdf" target="_blank" rel="noopener" class="cert-card__link">
-              Full Size View / Download →
+              <span data-tr="Tam Boyutlu Görüntüle / İndir →" data-en="Full Size View / Download →"></span>
             </a>
           </article>
  
@@ -143,9 +144,9 @@
   </main>
 
   <footer class="footer">
-    <p>"© <span id="year"></span> Turgut Köroğlu — tüm hakları saklıdır"</p>
+    <p>"© <span id="year"></span> <span data-tr="Turgut Köroğlu — tüm hakları saklıdır" data-en="Turgut Köroğlu — all rights reserved"></span></p>
   </footer>
 
   <script src="/script.js"></script>
 </body>
-</html>    
+</html>   
