@@ -99,47 +99,67 @@ if (langToggle) {
     applyLanguage(next);
   });
 }
-/*-------------------------------------------------------------------------------------------------------*/
-// const ceviriler = {
-//   tr: {
-//     hero_title: "Bilgisayar Mühendisi",
-//     hero_desc: "Karmaşık problemlere temiz, güvenli ve sürdürülebilir çözümler üretiyorum.",
-//     btn_projects: "Projelerimi Gör",
-//     btn_dil: "EN" // TR modundayken buton EN göstersin
-//   },
-//   en: {
-//     hero_title: "Computer Engineer",
-//     hero_desc: "I create clean, secure, and sustainable solutions to complex problems.",
-//     btn_projects: "View My Projects",
-//     btn_dil: "TR" // EN modundayken buton TR göstersin
-//   }
-// };
 
-// // Tarayıcı hafızasına bak, dil yoksa varsayılan olarak 'tr' yap
-// let current_lang = localStorage.getItem('lang') || 'tr';
+// ---------------------------------------------------------------
+// ARKA PLAN PARÇACIK ANİMASYONU
+// ---------------------------------------------------------------
+const canvas = document.getElementById('bgCanvas');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-// // Dili değiştiren ana fonksiyon
-// function setLang(lang) {
-//   current_lang = lang;
-//   localStorage.setItem('lang', lang); // Hafızaya kaydet
-  
-//   // Butonun üzerindeki yazıyı güncelle
-//   document.getElementById('lang-button').innerText = ceviriler[lang].btn_dil;
+if (canvas && !prefersReducedMotion) {
+  const ctx = canvas.getContext('2d');
+  let particles = [];
 
-//   // data-i18n etiketine sahip TÜM elemanları bul ve metinlerini değiştir
-//   const willChangeItems = document.querySelectorAll('[data-i18n]');
-  
-//   willChangeItems.forEach(eleman => {
-//     const key = eleman.getAttribute('data-i18n'); // örn: "hero_title"
-//     eleman.innerText = ceviriler[lang][key]; // Sözlükten karşılığını bul ve yaz
-//   });
-// }
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
 
-// // Butona tıklandığında dili değiştir
-// document.getElementById('lang-button').addEventListener('click', () => {
-//   const newLang = current_lang === 'tr' ? 'en' : 'tr';
-//   setLang(newLang);
-// });
+  const count = Math.floor((canvas.width * canvas.height) / 15000);
 
-// // Sayfa ilk yüklendiğinde hafızadaki dili uygula
-// setLang(current_lang);
+  for (let i = 0; i < count; i++) {
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      vx: (Math.random() - 0.5) * 0.3,
+      vy: (Math.random() - 0.5) * 0.3,
+    });
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    particles.forEach(p => {
+      p.x += p.vx;
+      p.y += p.vy;
+
+      if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+      if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 1.5, 0, Math.PI * 2);
+      ctx.fillStyle = '#7C9EFF';
+      ctx.fill();
+    });
+
+    particles.forEach((p1, i) => {
+      particles.slice(i + 1).forEach(p2 => {
+        const dist = Math.hypot(p1.x - p2.x, p1.y - p2.y);
+        if (dist < 120) {
+          ctx.beginPath();
+          ctx.moveTo(p1.x, p1.y);
+          ctx.lineTo(p2.x, p2.y);
+          ctx.strokeStyle = `rgba(124, 158, 255, ${1 - dist / 120})`;
+          ctx.lineWidth = 0.5;
+          ctx.stroke();
+        }
+      });
+    });
+
+    requestAnimationFrame(draw);
+  }
+
+  draw();
+}

@@ -670,3 +670,11 @@ body {
 #langs {
   margin-top: 50px;
 }
+
+#bgCanvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.4;
+}
