@@ -678,3 +678,30 @@ body {
   pointer-events: none;
   opacity: 0.4;
 }
+
+.card__meta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: rgb(72, 127, 221);
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--border);
+}
+.card__meta a {
+  color: var(--accent);
+  font-weight: 600;
+}
+.card__meta a:hover { text-decoration: underline; }
+
+.cert-card__fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--text-dim);
+  font-size: 13px;
+  background: var(--surface-2);
+}
